@@ -1,0 +1,33 @@
+@import url(./pass.css);
+@import url(./login.css);
+@import url(./email.css);
+@import url(./cuenta.css);
+@import url(./edit.css);
+@import url(./inici.css);
+@import url(./menu.css);
+@import url(./order.css);
+@import url(./myOrder.css);
+@import url(./navbar.css);
+
+:root{
+    --white: #FFFFFF;
+    --black: #000000;
+    --dark: #232830;
+    --very-light-pink: #c7c7c7;
+    --text-input-field: #F7F7F7;
+    --hospital-green: #ACD9B2;
+    --sm: 14px;
+    --md: 16px;
+    --lg: 18px
+
+}
+*{
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+}

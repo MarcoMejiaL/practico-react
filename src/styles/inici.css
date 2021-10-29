@@ -1,0 +1,57 @@
+.cards__container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,240px);/* auto fill es para que se generen solas */
+    gap: 26px;
+    place-content:center ;
+}
+.producti__card{
+    width: 240px;
+}
+.producti__card img{
+    width: 240px;
+    height: 240px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+.product__info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 12px;
+}
+.product__info figure {
+    margin: 0;
+}
+.product__info figure img{
+width: 35px;
+height: 35px;
+}
+.product__info div p:nth-child(1){
+    font-weight: bold;
+    font-size: var(--md);
+    margin-top: 0;
+    margin-bottom: 4px;
+}
+.product__info div p:nth-child(2){
+    color: var(--very-light-pink);
+    font-size: var(--sm);
+    margin-top: 0;
+    margin-bottom: 0;
+}
+@media (max-width: 640px) {
+
+    .cards__container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,140px);/* auto fill es para que se generen solas */
+    
+}
+
+.producti__card{
+    width: 140px;
+}
+.producti__card img{
+    width: 140px;
+    height: 140px;
+    
+}
+}
