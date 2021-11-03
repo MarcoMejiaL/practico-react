@@ -7,7 +7,8 @@ module.exports={
     entry:'./src/index.js',//archivo principal de entrada
     output:{
         path: path.resolve(__dirname, 'dist'),
-        filename: 'boundle.js',        
+        filename: 'boundle.js',   
+        publicPath:'/',     
     },
     mode: 'development',
     resolve: {
@@ -51,5 +52,8 @@ module.exports={
             filename: '[name].css'
         }),
     ],
+    devServer:{
+        historyApiFallback: true,
+    }
     
 }
