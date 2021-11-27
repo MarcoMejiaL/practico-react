@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { Component } from 'react'
 
 /**
  * @name StateFull
@@ -43,12 +43,17 @@ class App extends React.Component{
 }
 
 /**
- * @name Hook
+ * @name Hook 
  * 
- * @description 
+ * @description SE IMPORTA EN LA PARTE SUPERIOR {Component}
  */
 
 function ComponentesWrapper(WrrapperComponente){
 
-    clas
+    class Wrapper extends Component{
+        render(){
+            return <WrrapperComponente {...this.props}/>
+        }
+    }
+    return Wrapper
 }
